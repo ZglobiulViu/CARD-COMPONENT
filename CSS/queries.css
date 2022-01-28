@@ -1,0 +1,29 @@
+@media (max-width: 25em) {
+  main {
+    padding: 5em 2.5em;
+  }
+  .card-container {
+    height: 100%;
+  }
+  .main-img {
+    width: 25em;
+  }
+  .under-img {
+    height: 25em;
+    width: 25em;
+  }
+  .main-link {
+    font-size: 1.6rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+  .price,
+  .time-left {
+    font-size: 1.4rem;
+  }
+  .author-text {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2rem;
+  }
+}

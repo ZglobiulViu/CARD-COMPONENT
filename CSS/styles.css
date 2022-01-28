@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: Outfit;
+}
+:root {
+  font-size: 0.625em;
+}
+.card-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2.4em;
+  border-radius: 11px;
+  box-shadow: 0 2em 4em 1.6em rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.main-img {
+  width: 30em;
+  position: relative;
+  z-index: 2;
+
+  border-radius: 9px;
+}
+.under-img {
+  background-image: linear-gradient(
+      hsla(178, 100%, 50%, 0.459),
+      hsla(178, 100%, 50%, 0.342)
+    ),
+    url(../images/image-equilibrium.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  height: 30em;
+  width: 30em;
+  margin-bottom: 1.6em;
+  position: relative;
+}
+.main-link {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.6em;
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.description {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.8rem;
+  margin-bottom: 1.6em;
+}
+.price-time {
+  display: flex;
+  justify-content: space-between;
+}
+.price-time li {
+  list-style: none;
+}
+li {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.price,
+.time-left {
+  font-size: 1.6rem;
+}
+.price {
+  color: hsl(178, 100%, 50%);
+  margin-right: auto;
+  font-weight: 600;
+}
+
+.time-left {
+  color: hsl(215, 51%, 70%);
+}
+hr {
+  margin: 1.6em 0 1.4em;
+  color: hsl(215, 32%, 27%);
+}
+.author-box {
+  display: flex;
+  gap: 1.6em;
+  align-items: center;
+}
+.author-img {
+  width: 3.6em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.author-text {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.4rem;
+}
+.author-name-link {
+  color: hsl(0, 0%, 100%);
+}
+.frontendmentor-footer {
+  background-color: wheat;
+}
+/*-------HOVER STATES-------*/
+.main-link:link,
+.main-link:visited,
+.author-name-link:link,
+.author-name-link:visited {
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.main-link:hover,
+.main-link:active,
+.author-name-link:hover,
+.author-name-link:active {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.main-img:hover {
+  cursor: pointer;
+  opacity: 0;
+}
+.icon-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+}
